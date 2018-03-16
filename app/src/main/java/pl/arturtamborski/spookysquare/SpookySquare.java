@@ -9,7 +9,7 @@ public class SpookySquare {
 
     private boolean mClicked;
     private int mX, mY;
-    private int mSpeed = 3;
+    private int mSpeed = 7;
     private int mDirection;
     private int mHalfEdgeLength;
 

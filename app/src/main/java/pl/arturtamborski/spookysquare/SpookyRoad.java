@@ -26,7 +26,6 @@ public class SpookyRoad {
         mScreenWidth = screenWidth;
         mScreenHeight = screenHeight;
         mNumSegments = 100;
-        mLastSegment = 3;
         mSquareEdge = squareEdge;
         mHalfSquareEdge = squareEdge / 2;
 
@@ -37,6 +36,8 @@ public class SpookyRoad {
         for (int i = 1; i < mNumSegments; i++) {
             mSegments[i] = new RoadSegment(mSegments[i-1], i);
         }
+
+        mLastSegment = mRandom.nextInt(4) + 2;
     }
 
     public void update() {
